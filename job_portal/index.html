@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Responsive Job portal website
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Noto+Serif&family=Nunito:wght@200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="style.css">
+    <!--swiper-->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+    
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <h2 class="navbar-logo">
+            <a href="#">JOB PORTAL</a>
+        </h2>
+        <div class="navbar-menu">
+            <a href="#jobs">Jobs</a>
+            <a href="#companies">Companies</a>
+            <a href="#Testimoni">Testimonial</a>
+            <a href="#Blog">Blog</a>
+            <a href="#">sign in</a>
+
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+    </nav>
+    <!--header-->
+    <header>
+        <h1 class="header-title">
+            FIND YOUR <br> <span>PERFECT JOB</span><br> EASILY
+        </h1>
+    </header>
+    <!--search-->
+    <div class="search-wrapper">
+        <div class="search-box">
+            <div class="search-card">
+                <input type="text" class="search-input" placeholder="job title or keywords">
+                <button class="search-button">search</button>
+            </div>
+        </div>
+    </div>
+    <!--filter box-->
+    <div class="filter-box">
+        <div class="filter-dropdown">
+            <select name="job-level" id="job-level" class="filter-select">
+                <option>Job level</option>
+                <option>Entry</option>
+                <option>Mid senior</option>
+                <option>Director</option>
+            </select>
+            <select name="job-funtion" id="job-function" class="filter-select">
+                <option>Job Function</option>
+                <option>IT</option>
+                <option>Management</option>
+                <option>Education</option>
+                
+            </select>
+            <select name="employment" id="employment" class="filter-select">
+                <option>Employment Type</option>
+                <option>internship</option>
+                <option>Part Time</option>
+                <option>Full time</option> 
+            </select>
+            <select name="location" id="location" class="filter-select">
+                <option>Locations</option>
+                <button>Remote</button>
+                <option>Kenya</option>
+                <option>US</option>
+                <option>UK</option>
+            </select>
+            <select name="education" id="education" class="filter-select">
+                <option>Education</option>
+                <option>High School</option>
+                <option>Barchelor's Degree</option>
+                <option>Diploma Degree</option>
+                <option>Mastars Degree</option>
+            </select>
+        </div>
+        <div class="filter-chosen">
+            <div class="chosen-card">
+                Remote  <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Full time <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Financial Tech <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Entry Level <i class=" fas fa-times-circle"></i>
+            </div>
+        </div>
+    </div>
+    <!--job listing-->
+    <section class="job-list" id="jobs">
+        <div class="job-card">
+            <div class="job-name">
+                <img src="IMg/icons8-tesla-48.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Tesla</h4>
+                    <h3>Mechanical Engineer</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Illum id necessitatibus doloremque voluptas officiis repellendus 
+                        fuga, dolores sit, porro praesentium cupiditate autem? Voluptatem, alias iusto 
+                        velit numquam est voluptate! Blanditiis!</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">JAVASCRIPT</a>
+
+            </div>
+            <div class="job-posted">
+                posted 2min ago
+            </div>
+
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img src="IMg/icons8-ebay-48.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Ebay</h4>
+                    <h3>Business Development</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Illum id necessitatibus doloremque voluptas officiis repellendus 
+                        fuga, dolores sit, porro praesentium cupiditate autem? Voluptatem, alias iusto 
+                        velit numquam est voluptate! Blanditiis!</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">JAVASCRIPT</a>
+
+            </div>
+            <div class="job-posted">
+                posted 2min ago
+            </div>
+
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img src="IMg/icons8-tiktok-50.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>TikTok</h4>
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Illum id necessitatibus doloremque voluptas officiis repellendus 
+                        fuga, dolores sit, porro praesentium cupiditate autem? Voluptatem, alias iusto 
+                        velit numquam est voluptate! Blanditiis!</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">JAVASCRIPT</a>
+
+            </div>
+            <div class="job-posted">
+                posted 2min ago
+            </div>
+
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img src="IMg/icons8-youtube-48.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Youtube</h4>
+                    <h3>UI UX Designer</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Illum id necessitatibus doloremque voluptas officiis repellendus 
+                        fuga, dolores sit, porro praesentium cupiditate autem? Voluptatem, alias iusto 
+                        velit numquam est voluptate! Blanditiis!</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">JAVASCRIPT</a>
+
+            </div>
+            <div class="job-label">
+                posted an hour ago
+            </div>
+
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img src="IMg/icons8-amazon-web-services-48.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Amazon</h4>
+                    <h3>Software  Engineer</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Illum id necessitatibus doloremque voluptas officiis repellendus 
+                        fuga, dolores sit, porro praesentium cupiditate autem? Voluptatem, alias iusto 
+                        velit numquam est voluptate! Blanditiis!</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">JAVASCRIPT</a>
+
+            </div>
+            <div class="job-posted">
+                posted an hour ago
+            </div>
+
+        </div>
+        <button class="job-more">More LIst</button>
+
+
+
+    </section>
+    <!--join-->
+    <section class="join">
+        <div class="join-detail">
+            <h1 class="section-title">LETS START JOB WITH US</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+                elit. Iste id, iure totam voluptates cupiditate dolores minima 
+                quam eum deleniti tempore libero harum obcaecati perspiciatis ea, modi 
+                ducimus nostrum voluptate nemo?</p>
+        </div>
+        <button class="join-button">Join now</button>
+    </section>
+    <!--featured company-->
+    <section class="featured" id="companies">
+        <h1 class="section-title">
+            Featured Companies
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Corporis autem voluptatum possimus error consequuntur dicta mollitia rerum aliquid fugiat, eius ipsa incidunt quae ut laboriosam,
+             asperiores maiores nesciunt eaque placeat?</p>
+            <div class="featured-wrapper">
+                <div class="featured-card">
+                    <img src="IMg/icons8-ebay-48.png" alt="" class="featured-image">
+                    <p>Ebay</p>
+                    <button class="featured-button">View 2 Jobs</button>
+                </div>
+                <div class="featured-card">
+                    <img src="IMg/icons8-youtube-48.png" alt="" class="featured-image">
+                    <p>Youtube</p>
+                    <button class="featured-button">View 1 Jobs</button>
+                </div>
+                <div class="featured-card">
+                    <img src="IMg/icons8-tiktok-50.png" alt="" class="featured-image">
+                    <p>Tiktok</p>
+                    <button class="featured-button">View 3 Jobs</button>
+                </div>
+                <div class="featured-card">
+                    <img src="IMg/icons8-google-48.png" alt="" class="featured-image">
+                    <p>Google</p>
+                    <button class="featured-button">View 3 Jobs</button>
+                </div>
+                <div class="featured-card">
+                    <img src="IMg/icons8-facebook-48.png" alt="" class="featured-image">
+                    <p>Facebook</p>
+                    <button class="featured-button">View 3 Jobs</button>
+                </div>
+                <div class="featured-card">
+                    <img src="IMg/icons8-apple-logo-50.png" alt="" class="featured-image">
+                    <p>Apple</p>
+                    <button class="featured-button">View 3 Jobs</button>
+                </div>
+                <div class="featured-card">
+                    <img src="IMg/icons8-amazon-web-services-48.png" alt="" class="featured-image">
+                    <p>Amazon</p>
+                    <button class="featured-button">View 3 Jobs</button>
+                
+                </div>
+             </div>
+    </section>
+    <!--testimoial-->
+    <section class="testimoni" id="testimoni">
+        <h1 class="section-title">testimonial</h1>
+        <p>Lets see what our client says to us</p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quis dicta, non quos aliquam fuga possimus obcaecati ad iste corrupti
+                         eligendi nisi architecto
+                        neque ducimus cupiditate adipisci et ipsam assumenda vero?</h3>
+                        <div class="testimoni-pic">
+                            <img src="IMg/1 Avengers Preferences - Vehicle.jpg">
+                            <p>cate wambui</p>
+                            <span>Business Development</span>
+                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quis dicta, non quos aliquam fuga possimus obcaecati ad iste corrupti
+                         eligendi nisi architecto
+                        neque ducimus cupiditate adipisci et ipsam assumenda vero?</h3>
+                        <div class="testimoni-pic">
+                            <img src="IMg/kl.jpg">
+                            <p>Taylor Swift</p>
+                            <span>Data Analysis</span>
+                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quis dicta, non quos aliquam fuga possimus obcaecati ad iste corrupti
+                         eligendi nisi architecto
+                        neque ducimus cupiditate adipisci et ipsam assumenda vero?</h3>
+                        <div class="testimoni-pic">
+                            <img src="IMg/kl.jpg">
+                            <p>Damian orina</p>
+                            <span>Web Developer</span>
+                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quis dicta, non quos aliquam fuga possimus obcaecati ad iste corrupti
+                         eligendi nisi architecto
+                        neque ducimus cupiditate adipisci et ipsam assumenda vero?</h3>
+                        <div class="testimoni-pic">
+                            <img src="IMg/kl.jpg">
+                            <p>Kimberly</p>
+                            <span>logistics Director</span>
+                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quis dicta, non quos aliquam fuga possimus obcaecati ad iste corrupti
+                         eligendi nisi architecto
+                        neque ducimus cupiditate adipisci et ipsam assumenda vero?</h3>
+                        <div class="testimoni-pic">
+                            <img src="IMg/kl.jpg">
+                            <p>Faith Kivuva</p>
+                            <span>Marketing Officer</span>
+                        </div>
+                </div>
+            </div>
+            <div class="swiper-pagination">
+
+            </div>
+        </div>
+    </section>
+    <!--blog-->
+    <section class="blog" id="blog">
+        <h1 class="section-title">Career advice</h1>
+        <p>Learn More career tips from companys recruiters</p>
+        <div class="blog-wrapper">
+            <div class="blog-card">
+                <img src="IMg/BMW X6.jpg" alt="" class="blog-image">
+                <div class="blog-detail">
+                    <span> 11 April 2022</span>
+                    <h4>How to enjoy your work</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Aliquam, neque, tenetur maiores maxime hic officia eum alias ipsum
+                          ab debitis voluptas excepturi obcaecati eius aperiam doloribus
+                         dignissimos suscipit. Quis, nisi!
+                        </p>
+                        <hr class="devider">
+                        <a href="#" class="blog-more">Read MOre</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="IMg/How To Become a Digital Nomad and Travel The World (2022).jpg" alt="" class="blog-image">
+                <div class="blog-detail">
+                    <span> 11 April 2022</span>
+                    <h4>Mnaging time effectively</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Aliquam, neque, tenetur maiores maxime hic officia eum alias ipsum
+                          ab debitis voluptas excepturi obcaecati eius aperiam doloribus
+                         dignissimos suscipit. Quis, nisi!
+                        </p>
+                        <hr class="devider">
+                        <a href="#" class="blog-more">Read MOre</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="IMg/Pin by Josías Carb Q on 1 _ Bmw sports car, Bmw, Dream cars bmw.jpg" alt="" class="blog-image">
+                <div class="blog-detail">
+                    <span> 19 April 2022</span>
+                    <h4>10 Tips for a technical interview</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Aliquam, neque, tenetur maiores maxime hic officia eum alias ipsum
+                          ab debitis voluptas excepturi obcaecati eius aperiam doloribus
+                         dignissimos suscipit. Quis, nisi!
+                        </p>
+                        <hr class="devider">
+                        <a href="#" class="blog-more">Read MOre</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <div class="footer-wrapper">
+            <h3>JOBPORTAL</h3>
+            <p>Lorem ipsum dolor sit amet consectetur,</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linked-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <h4>Explore</h4>
+            <a href="#">Top companies</a>
+            <a href="#">Terms of service</a>
+            <a href="#">Podcast</a>
+            <a href="#">Career</a>
+        </div>
+        <div class="footer-wrapper">
+            <h4>About</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Get inspired</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="footer-wrapper">
+            <h4>Support</h4>
+            <a href="#">Customer Services</a>
+            <a href="#">Trust & Safety</a>
+            <a href="#">Partnership</a>
+        </div>
+        <div class="footer-wrapper">
+            <h4>Community</h4>
+            <a href="#">Community</a>
+            <a href="#">invite a friend</a>
+            <a href="#">event</a>
+        </div>
+    
+    </footer>
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
